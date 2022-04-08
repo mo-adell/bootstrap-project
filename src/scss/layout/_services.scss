@@ -1,0 +1,65 @@
+@use "../sass-utils/all" as *;
+
+/*  S E R V I C E S  */
+.services {
+  background: #1f1f1fb2;
+  padding: rem(120) 0;
+
+  @include query(md) {
+    padding: rem(80) 0;
+  }
+
+  * {
+    color: #fff;
+  }
+
+  h4 {
+    font-size: rem(13);
+    font-weight: 600;
+
+    @include query(lg) {
+      text-align: center;
+  
+    }
+  }
+
+  &__heading {
+    h2 {
+      justify-content: flex-start;
+
+  @include query(lg) {
+    justify-content: center;
+
+  }
+      &::before {
+        content: "W";
+      }
+    }
+
+    p {
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      max-width: 75%;
+
+  @include query(lg) {
+    text-align: center;
+    max-width: 100%;
+
+  }
+    }
+  }
+
+  &-list {
+    list-style: none;
+    columns: 2;
+
+    @include query(md) {
+      columns: 1;
+    
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}

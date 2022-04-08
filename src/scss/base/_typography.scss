@@ -1,0 +1,62 @@
+@use '../sass-utils/all' as *;
+
+// Fonts
+html {
+  scroll-behavior: smooth;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+*::selection {
+  background: var(--heading-clr);
+  color: #fff;
+}
+
+img::selection {
+  background: transparent;
+}
+/*  T Y P O G R A P H Y  */
+.font-stack-thin,p {
+  font-family: var(--pri-ft);
+  font-size: clmp(1rem, 1.5rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-clr);
+}
+
+.font-stack-regular {
+  font-family: var(--pri-ft);
+  font-size: clmp(1.15rem, 1.25rem);
+  font-weight: 400;
+  color: var(--sub-heading-clr);
+}
+
+.font-stack-bold {
+  font-family: var(--pri-ft);
+  font-size: clmp(1.15rem, 1.25rem);
+  font-weight: 500;
+  color: var(--sub-heading-gray);
+}
+
+.font-stack-bolder {
+  font-family: var(--pri-ft);
+  font-size: clmp(2.2rem, 2.25rem);
+  font-weight: 600;
+  color: var(--heading-gray);
+}
+
+.font-stack-black,.h1,h1 {
+  font-family: var(--pri-ft);
+  font-size: clmp(3.8rem, 6.25rem);
+  font-weight: 700;
+  color: #fff;
+}
+
+body {
+  font-family: var(--pri-ft);
+}

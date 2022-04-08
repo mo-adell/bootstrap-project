@@ -1,0 +1,87 @@
+@use "../sass-utils/all" as *;
+
+/*  H E A D E R  */
+.header {
+
+  .carousel-inner {
+    position: relative;
+  
+    &::after {
+      content: " ";
+      display: block;
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  
+      width: 100%;
+      height: 100%;
+      background-color: #1f1f1f67;
+    }
+  
+    .carousel-caption {
+      z-index: 5;
+    }
+  }
+  
+  .header-slide__image {
+    object-fit: cover;
+  }
+  
+  .carousel__controls {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 50;
+  
+    .carousel-control-next,
+    .carousel-control-prev {
+      padding: 0.5rem;
+      position: static;
+      width: 100%;
+      border: 1px solid #fff;
+      border-left: none;
+      position: relative;
+  
+      &::before {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 100%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 0;
+        transition: width 250ms;
+      }
+  
+      &:hover {
+        color: var(--heading-clr);
+  
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+    .carousel-control-next {
+      border-top: none;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 5;
+  
+    }
+  }
+
+  .carousel-indicators {
+    z-index: 99;
+  }
+}

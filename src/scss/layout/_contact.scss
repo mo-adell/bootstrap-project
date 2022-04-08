@@ -1,0 +1,48 @@
+@use '../sass-utils/all' as *;
+
+/*  C O N T A C T  */ 
+.contact {
+
+  &__heading {
+    h2{
+justify-content: flex-start;
+      &::before {
+        content: "G";
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+
+  form {
+
+    label {
+      font-size: rem(13);
+      font-weight: 500;
+      color: var(--heading-clr);
+    }
+
+    input {
+      width: 70%;
+      padding: .5rem 1rem;
+      border: 2px solid  #EEEEEE;
+
+      @include query(md) {
+        width: 100%;
+
+      }
+    }
+
+    textarea {
+      width: 70%;
+      padding: .5rem 1rem;
+      border: 2px solid  #EEEEEE;
+      resize: none;
+      @include query(md) {
+        width: 100%;
+
+      }
+    }
+  }
+}

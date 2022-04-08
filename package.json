@@ -1,0 +1,26 @@
+{
+  "name": "exam-1",
+  "version": "1.0.0",
+  "description": "portfolio landing page, the task was to create a page like the original one and this is the result",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.43.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
+  }
+}

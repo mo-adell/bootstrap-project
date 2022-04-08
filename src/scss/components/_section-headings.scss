@@ -1,0 +1,27 @@
+@use '../sass-utils/all' as *;
+
+/*  S E C T I O N   H E A D I N G S  */ 
+.section__heading {
+
+  h2 {
+    font-weight: 700;
+    font-size: rem(38);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    &::before {
+      content: "C";
+      color: #dfdfdf;
+      position: absolute;
+      z-index: -1;
+      font-size: rem(60);
+    }
+  }
+
+  p {
+    text-align: center;
+    font-size: rem(18);
+  }
+}

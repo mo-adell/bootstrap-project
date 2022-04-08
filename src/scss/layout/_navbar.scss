@@ -1,0 +1,43 @@
+@use "../sass-utils/all" as *;
+
+/*  N A V B A R  */
+.navbar {
+
+  .navbar-collapse a {
+    font-size: rem(13);
+    font-weight: 500;
+  }
+  
+  .navbar-brand {
+    width: 100px;
+  }
+  
+  .nav-link {
+    color: var(--sec-clr) !important;
+  
+    &:hover {
+      color: var(--text-clr) !important;
+    }
+  }
+  
+  .active {
+    color: var(--text-clr) !important;
+  }
+  
+  .list-group-item a:hover {
+    color: var(--text-clr) !important;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    border-left: 1px solid #bbbbbb79;
+    border-radius: 0;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  
+  .nav-social-box {
+    border-left: 1px solid #bbbbbb79;
+  }
+}

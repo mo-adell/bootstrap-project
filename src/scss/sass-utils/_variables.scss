@@ -1,0 +1,38 @@
+//Colors
+$pri-clr  : #00C3DA;
+$sec-clr  : blue;
+
+//font colors
+$heading-clr      :  #1F1F1F;
+$sub-heading-clr  :  #787878;
+$text-clr         :  #787878;
+
+
+//fonts
+$pri-ft  : "Poppins", sans-serif;
+$sec-ft  : "namehere", serif;
+
+:root {
+  /*  C O L O R S  */
+  --pri-clr:          #00C3DA;
+  --sec-clr:          #1F1F1F;
+  --heading-clr:      #1F1F1F;
+  --sub-heading-clr:  #787878;
+  --text-clr:         #787878;
+  
+  --pri-ft :          "Poppins", sans-serif;
+}
+
+
+//Maps
+$breakpoints: (
+  // 600px
+  sm: 37.5rem,
+  // 768px
+  md: 48rem,
+  // 992px
+  lg: 62rem,
+  // 1200px
+  xlg: 75rem,
+);
+

@@ -1,0 +1,42 @@
+@use '../sass-utils/all' as *;
+
+/*  T E A M  */ 
+.team {
+  padding: rem(120) 0;
+
+  @include query(md) {
+    padding: rem(80) 0;
+  }
+
+  .img {
+    position: relative;
+
+    &__overlay {
+      background: #00c4dade;
+      position: absolute;
+      inset: 0;
+      transform: translateY(5%);
+      opacity: 0;
+      transition: 250ms ease-in-out;
+
+      &:hover {
+      transform: translateY(0);
+        opacity: 1;
+      }
+
+      a i:hover {
+        color: #fff;
+      }
+
+      .text h3,p{
+        font-size: rem(13);
+      }
+
+      h3 {
+        font-weight: 500;
+      }
+    }
+
+
+  }
+}

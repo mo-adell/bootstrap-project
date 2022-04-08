@@ -1,0 +1,74 @@
+@use "../sass-utils/all" as *;
+
+/*  P R I C I N G  */
+.pricing {
+  background: #f7f7f7;
+  padding: rem(120) 0;
+
+  @include query(md) {
+    padding: rem(80) 0;
+  }
+
+  &__heading {
+    h2::before {
+      color: #818181;
+    }
+  }
+
+  .inner {
+    h4 {
+      font-size: rem(13);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .price {
+      font-size: rem(55);
+      padding-bottom: 1.4rem;
+      margin-bottom: 1.4rem;
+      border-bottom: 1px solid #eeeeee;
+
+      sup {
+        font-size: rem(16);
+        vertical-align: super;
+      }
+    }
+
+    .price-list {
+      margin-bottom: 2.5rem;
+      list-style: none;
+      padding: 0;
+
+      li {
+        text-align: left;
+        margin-bottom: 1rem;
+        color: var(--text-clr);
+      }
+    }
+  }
+
+  .special {
+    transform: scale(1.05);
+
+    @include query(lg ) {
+      transform: none;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-size: rem(9);
+        background: var(--pri-clr);
+        padding: rem(5) rem(10);
+        color: #Fff;
+        border-radius: 30px;
+      }
+    }
+    .price {
+      color: var(--pri-clr);
+    }
+  }
+}

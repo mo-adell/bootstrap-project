@@ -1,0 +1,7 @@
+@use '../sass-utils/all' as *;
+
+/*  C O M M O N   C L A S S E S  */
+.flex {
+  @include flexbox(row, center, center, 0);
+}
+
